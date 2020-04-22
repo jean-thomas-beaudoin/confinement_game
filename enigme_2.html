@@ -11,11 +11,6 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <script>
-  for (i=0,1,i++){
-  location.reload()
-  };
-  </script>
   <nav class="nav_color" role="navigation">
     <div class="nav-wrapper">
         Enigme n°2
@@ -81,10 +76,12 @@
   <script src="js/init.js"></script>
   <script>
     var answer = 314;
-
-    var test = document.getElementById('test').value;
+    var test = 0;
 
     function redirection(){
+      delete(test)
+
+      var test = document.getElementById('test').value;
       console.log(test)
       if(test == answer){
         console.log('ça marche')
