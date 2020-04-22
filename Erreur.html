@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bienvenue !</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="nav_color" role="navigation">
+    <div class="nav-wrapper">
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <h1 class="header center title_color">Raté !</h1>
+        <div class="row center">
+          <h4 class="header col s12 light">Perdu ! Tu peux revenir en arrière pour retenter ta chance !</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class = "Parallax"><img src = "impasse.jpeg" alt = "" height = "300px" width = "400px"></div><br>
+
+  <footer class="page-footer nav_color">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Vos Chefs
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    var answer = 5;
+
+    var test = 0;
+
+    var test_4 = document.getElementById('test_4');
+    var test_5 = document.getElementById('test_5');
+    var test_7 = document.getElementById('test_7');
+    var test_9 = document.getElementById('test_9');
+
+    function redirection(){
+      if(test_4.checked){test = test_4.value};
+      if(test_5.checked){test = test_5.value};
+      if(test_7.checked){test = test_7.value};
+      if(test_9.checked){test = test_9.value};
+
+      if(test == answer){
+        console.log('ça marche')
+        location.assign('enigme_2.html');
+      };
+}
+
+  </script>
+
+  </body>
+</html>
