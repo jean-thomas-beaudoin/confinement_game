@@ -55,6 +55,11 @@
   <footer class="page-footer nav_color">
     <div class="container">
       <div class="row">
+        <h4>Ta réponse :</h4>
+        <form>
+          <label><input type = 'number' id = 'test' /></label>
+          <div class ='btn-large' onclick="redirection()">Valider</div>
+        </form>
       </div>
     </div>
     <div class="footer-copyright">
@@ -70,24 +75,16 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-    var answer = 5;
+    var answer = 314;
 
-    var test = 0;
-
-    var test_4 = document.getElementById('test_4');
-    var test_5 = document.getElementById('test_5');
-    var test_7 = document.getElementById('test_7');
-    var test_9 = document.getElementById('test_9');
+    var test = document.getElementById('test').value
 
     function redirection(){
-      if(test_4.checked){test = test_4.value};
-      if(test_5.checked){test = test_5.value};
-      if(test_7.checked){test = test_7.value};
-      if(test_9.checked){test = test_9.value};
-
       if(test == answer){
         console.log('ça marche')
         location.assign('starter_template.html');
+      } else {
+        location.assign('Erreur.html')
       };
 }
 
