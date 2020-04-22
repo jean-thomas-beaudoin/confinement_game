@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bienvenue !</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="nav_color" role="navigation">
+    <div class="nav-wrapper">
+        Enigme n°2
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <h1 class="header center title_color">Bien joué !</h1>
+        <div class="row center">
+          <h4 class="header col s12 light">Bravo, tu as passé la première énigme. Bon, on te cache pas que c'était l'échauffement. La suite devrait se corser !</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class = "center col m12">
+          <div class = "card card_color">
+            <div class = "card-content">
+            <span class = "card-title white-text"><h3>Enigme n°2</h3></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer nav_color">
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by Jean-Thomas BEAUDOIN
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    var answer = 5;
+
+    var test = 0;
+
+    var test_4 = document.getElementById('test_4');
+    var test_5 = document.getElementById('test_5');
+    var test_7 = document.getElementById('test_7');
+    var test_9 = document.getElementById('test_9');
+
+    function redirection(){
+      if(test_4.checked){test = test_4.value};
+      if(test_5.checked){test = test_5.value};
+      if(test_7.checked){test = test_7.value};
+      if(test_9.checked){test = test_9.value};
+
+      if(test == answer){
+        console.log('ça marche')
+        location.assign('starter_template.html');
+      };
+}
+
+  </script>
+
+  </body>
+</html>
