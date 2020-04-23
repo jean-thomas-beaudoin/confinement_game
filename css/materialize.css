@@ -2837,7 +2837,7 @@ video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 650px;
+  background-size: 100%;
 }
 
 .parallax-container .parallax {
@@ -2854,7 +2854,6 @@ video.responsive-video {
   position: relative;
   left: 50%;
   bottom: 0;
-  background-size: 100%;
   width: 100%;
   height: auto;
   -webkit-transform: translate3d(0, 0, 0);
