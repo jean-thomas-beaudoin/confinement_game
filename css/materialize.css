@@ -2852,8 +2852,6 @@ video.responsive-video {
 .parallax-container .parallax img {
   opacity: 0;
   position: relative;
-  left: 50%;
-  bottom: 0;
   max-width: 100%;
   width: auto;
   -webkit-transform: translate3d(0, 0, 0);
