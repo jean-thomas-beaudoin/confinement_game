@@ -2835,13 +2835,13 @@ video.responsive-video {
 }
 
 .parallax-container {
-  position: absolute;
+  position: relative;
   overflow: hidden;
   height: 650px;
 }
 
 .parallax-container .parallax {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
