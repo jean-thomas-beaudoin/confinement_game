@@ -2857,6 +2857,7 @@ video.responsive-video {
   max-width: 100%;
   max-height: 100%;
   height: auto;
+  width: auto;
   display: block;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
