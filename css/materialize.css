@@ -2841,7 +2841,7 @@ video.responsive-video {
 }
 
 .parallax-container .parallax {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -2851,7 +2851,7 @@ video.responsive-video {
 
 .parallax-container .parallax img {
   opacity: 0;
-  position: relative;
+  position: absolute;
   left: 50%;
   bottom: 0;
   min-width: 100%;
@@ -3450,7 +3450,8 @@ table span.badge {
 }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
+  max-width: 1280px;
   width: 90%;
 }
 
