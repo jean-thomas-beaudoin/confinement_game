@@ -3456,10 +3456,10 @@ table span.badge {
 }
 
 .container .image img{
-  position: center;
   max-width: 100%;
   height: auto;
   display: block;
+  left: 50%;
 }
 
 @media only screen and (min-width: 601px) {
