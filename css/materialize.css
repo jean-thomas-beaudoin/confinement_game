@@ -2854,8 +2854,8 @@ video.responsive-video {
   position: relative;
   left: 50%;
   bottom: 0;
-  max-width: 100%;
-  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
@@ -3453,6 +3453,12 @@ table span.badge {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%;
+}
+
+.container .image img{
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media only screen and (min-width: 601px) {
