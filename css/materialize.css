@@ -2854,8 +2854,8 @@ video.responsive-video {
   position: relative;
   left: 50%;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
@@ -3464,7 +3464,7 @@ table span.badge {
 
 @media only screen and (min-width: 601px) {
   .container {
-    width: 50%;
+    width: 70%;
   }
 }
 
