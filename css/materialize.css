@@ -2841,7 +2841,7 @@ video.responsive-video {
 }
 
 .parallax-container .parallax {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
