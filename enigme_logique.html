@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Enigme 5</title>
+  <title>Enigme 6</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,16 +13,15 @@
 <body>
   <nav class="nav_color" role="navigation">
     <div class="nav-wrapper">
-        Enigme n°5 - logique
+        Enigme n°6 - Père Fouras
     </div>
   </nav>
 
   <div class="section no-pad-bot">
     <div class="container">
-      <h1 class="header center title_color">Encore un petit effort</h1>
+      <h1 class="header center title_color">Appel à un ami</h1>
       <div class="row center">
-        <h4 class="header col s12 light">Tu as passé la moitié des énigmes que tu dois résoudre. Ca risque de se compliquer maintenant.<br>
-        Tes chefs comptent sur toi, ne l'oublie pas !</h4>
+        <h4 class="header col s12 light">Pour l'énigme suivante, on a fait appel à un vieil ami. Peut-être que tu le reconnaitras...</h4>
       </div>
     </div>
   </div>
@@ -36,13 +35,13 @@
         <div class = "center col m12">
           <div class = "card card_color">
             <div class = "card-content">
-            <span class = "card-title white-text"><h3>Enigme n°5</h3></span>
-            <p>Tu connais tes tables de'additions et de multiplications ?</p>
-            <h5>10 + 3 = 1113</h5>
-            <h5>12 x 12 = 1124 </h5>
-            <h5>17 + 8 = 1215</h5>
-            <h5>3 x 6 = ?</h5>
-            <h5>Quel est le bon résultat ?</h5>
+            <span class = "card-title white-text"><h3>Enigme n°6</h3></span>
+            <div class = "Parallax center"><img src = "pere_fouras.png" alt = "" height = "200px" width = "400px"></div>
+            <h5>Il est souvent compris.<br>
+            Il veut toujours aider.<br>
+            Il est souvent gagnant.<br>
+            Parfois vous le rendez.<br>
+            Qui est-il ?</h5>
           </div>
           </div>
         </div>
@@ -56,7 +55,7 @@
       <div class="row">
         <h4>Ta réponse :</h4>
         <form>
-          <label><input class = 'col m4 s4 center' type = 'number' id = 'test' /></label><br><br><br>
+          <label><input class = 'col m4 s4 center' type = 'text' id = 'test' /></label><br><br><br>
           <div class ='btn-large' onclick="redirection()">Valider</div>
         </form>
       </div>
@@ -74,7 +73,8 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-    var answer = 1118;
+    var answer = 'Le service';
+    var answer_2 = 'Service';
     var test = 0;
 
     function redirection(){
@@ -82,7 +82,7 @@
 
       var test = document.getElementById('test').value;
       console.log(test)
-      if(test == answer){
+      if(test == answer | test == answer_2){
         console.log('ça marche')
         location.assign('#');
       } else {
