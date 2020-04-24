@@ -40,11 +40,10 @@
               <p>
                 <form>
                   <label>
-                    <div class = 'btn-large' onclick='indice()'>Clique ici !</div><br><br>
+                    <div class = 'btn-large' id = 'jo' onclick='indice()'>Clique ici !</div><br><br>
                   </label>
                 </form>
               </p>
-              <img src='jo.jpeg' alt = '' height = '200px' width = '300px'>
           </div>
           </div>
         </div>
@@ -93,8 +92,9 @@
 }
 
     function indice(){
-      var jo = document.getElementById('jo')
-      jo.innerHTML = ''
+      var jo = document.getElementById('jo');
+      jo.innerHTML = "<img src='jo.jpeg' alt = '' height = '200px' width = '300px'>";
+      jo.getElementsByTagName('div')[1].style.display = 'block';
     }
 
   </script>
