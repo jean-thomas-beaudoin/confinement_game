@@ -13,15 +13,16 @@
 <body>
   <nav class="nav_color" role="navigation">
     <div class="nav-wrapper">
-        Enigme n°2 - Mastermind
+        Enigme n°5 - logique
     </div>
   </nav>
 
   <div class="section no-pad-bot">
     <div class="container">
-      <h1 class="header center title_color">Bien joué !</h1>
+      <h1 class="header center title_color">Encore un petit effort</h1>
       <div class="row center">
-        <h4 class="header col s12 light">Bravo, tu as passé la première énigme. Bon, on te cache pas que c'était l'échauffement. La suite devrait se corser !</h4>
+        <h4 class="header col s12 light">Tu as passé la moitié des énigmes que tu dois résoudre. Ca risque de se compliquer maintenant.<br>
+        Tes chefs comptent sur toi, ne l'oublie pas !</h4>
       </div>
     </div>
   </div>
@@ -35,15 +36,13 @@
         <div class = "center col m12">
           <div class = "card card_color">
             <div class = "card-content">
-            <span class = "card-title white-text"><h3>Enigme n°2</h3></span>
-            <p>On reste dans les chiffres avec cette énigme.</p>
-            <h5 class = 'white-text'>Indices :</h5>
-            <p><h5>684 : </h5> 1 chiffre est bon et bien placé</p>
-            <p><h5>621 : </h5> 1 chiffre est bon et mal placé</p>
-            <p><h5>436 : </h5> 2 chiffres sont bons et mals placés</p>
-            <p><h5>708 : </h5> Rien n'est bon</p>
-            <p><h5>783 : </h5> 1 chiffre est bon et mal placé</p>
-            <h5>Quel est le bon ordre des nombres ?</h5>
+            <span class = "card-title white-text"><h3>Enigme n°5</h3></span>
+            <p>Tu connais tes tables de'additions et de multiplications ?</p>
+            <h5>10 + 3 = 1113</h5>
+            <h5>12 x 12 = 1124 </h5>
+            <h5>17 + 8 = 1215</h5>
+            <h5>3 x 6 = ?</h5>
+            <h5>Quel est le bon résultat ?</h5>
           </div>
           </div>
         </div>
@@ -75,7 +74,7 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-    var answer = 314;
+    var answer = 1118;
     var test = 0;
 
     function redirection(){
@@ -85,7 +84,7 @@
       console.log(test)
       if(test == answer){
         console.log('ça marche')
-        location.assign('validation_enigme_2.html');
+        location.assign('#');
       } else {
         location.assign('Erreur.html');
       };
