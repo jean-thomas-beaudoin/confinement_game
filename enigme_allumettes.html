@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Enigme 3</title>
+  <title>Enigme 5</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,15 +13,16 @@
 <body>
   <nav class="nav_color" role="navigation">
     <div class="nav-wrapper">
-        Enigme n°3 - Les carrés
+        Enigme n°5 - Les allumettes
     </div>
   </nav>
 
   <div class="section no-pad-bot">
     <div class="container">
-      <h1 class="header center title_color">On est reparti !</h1>
+      <h1 class="header center title_color">Encore un petit effort</h1>
       <div class="row center">
-        <h4 class="header col s12 light">On passe maintenant à une énigme visuelle.</h4>
+        <h4 class="header col s12 light">Tu as passé la moitié des énigmes que tu dois résoudre. Ca risque de se compliquer maintenant.<br>
+            Tes chefs comptent sur toi, ne l'oublie pas !</h4>
       </div>
     </div>
   </div>
@@ -35,9 +36,9 @@
         <div class = "center col m12">
           <div class = "card card_color">
             <div class = "card-content">
-            <span class = "card-title white-text"><h3>Enigme n°3</h3></span>
-            <div class = "Parallax center"><img src = "enigme_carre.JPG" alt = "" height = "400px" width = "400px"></div>
-            <h5>Combien y a-t-il de carrés sur ce dessin ?</h5>
+            <span class = "card-title white-text"><h3>Enigme n°5</h3></span>
+            <div class = "Parallax center"><img src = "enigme_allumettes.JPG" alt = "" height = "300px" width = "500px"></div>
+            <h5>Quel est le nombre le plus élevé que tu puisses faire en ne bougeant que deux allumettes ?</h5>
           </div>
           </div>
         </div>
@@ -69,7 +70,7 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-    var answer = 40;
+    var answer = 999;
     var test = 0;
 
     function redirection(){
@@ -79,7 +80,7 @@
       console.log(test)
       if(test == answer){
         console.log('ça marche')
-        location.assign('enigme_code.html');
+        location.assign('enigme_logique.html');
       } else {
         location.assign('Erreur.html');
       };
