@@ -74,12 +74,7 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-    var answer = 'Le service';
-    var answer_2 = 'Service';
-    var answer_3 = 'le service';
-    var anser_4 = 'service';
-    var answer_5 = 'LE SERVICE';
-    var answer_6 = 'SERVICE';
+    var answer = ['Le service','Service','le service','service','LE SERVICE','SERVICE'];
     var test = 0;
 
     function redirection(){
@@ -87,12 +82,14 @@
 
       var test = document.getElementById('test').value;
       console.log(test)
-      if(test == answer | test == answer_2 | test == answer_3 | test == answer_4 | test == answer_5 | test == answer_6){
-        console.log('ça marche')
-        location.assign('validation_enigme_6.html');
-      } else {
-        location.assign('Erreur.html');
+      for (i=0,i=length(answer),i++){
+        if(test == answer[i]){
+          console.log('ça marche')
+          location.assign('validation_enigme_6.html');
+        }
       };
+      location.assign('Erreur.html');
+    };
 }
 
   </script>
