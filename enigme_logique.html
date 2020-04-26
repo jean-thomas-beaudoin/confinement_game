@@ -82,7 +82,7 @@
 
       var test = document.getElementById('test').value;
       console.log(test)
-      for (i=0,i=length(answer),i++){
+      for (let i=0;i<length(answer)+1;i++){
         if(test == answer[i]){
           console.log('ça marche')
           location.assign('validation_enigme_6.html');
@@ -90,7 +90,6 @@
       };
       location.assign('Erreur.html');
     };
-}
 
   </script>
 
