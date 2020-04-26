@@ -82,13 +82,37 @@
 
       var test = document.getElementById('test').value;
       console.log(test)
-      for (let i = 0 ; i < answer.length + 1 ; i++){
-        if(test == answer[i]){
+      if(test == answer[0]){
+        console.log('ça marche')
+        location.assign('validation_enigme_6.html');
+      } else {
+        if(test == answer[1]){
+        console.log('ça marche')
+        location.assign('validation_enigme_6.html');
+        } else {
+          if(test == answer[2]){
           console.log('ça marche')
           location.assign('validation_enigme_6.html');
-        }
+          } else {
+            if(test == answer[3]){
+              console.log('ça marche')
+              location.assign('validation_enigme_6.html');
+            } else {
+              if(test == answer[4]){
+                console.log('ça marche')
+                location.assign('validation_enigme_6.html');
+              } else {
+                if(test == answer[5]){
+                  console.log('ça marche')
+                  location.assign('validation_enigme_6.html');
+                } else {
+                  location.assign('Erreur.html');
+                };
+              };
+            };
+          };
+        };
       };
-      location.assign('Erreur.html');
     };
 
   </script>
